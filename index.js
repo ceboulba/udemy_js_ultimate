@@ -107,7 +107,7 @@ class War extends Personnage {
 }
 
 var gandalf = new Magicien('Gandalf');
-var thor    = new Guerrier('Thor');
+var thor    = new War('Thor');
 console.log(thor.informations);
 console.log(gandalf.informations);
 gandalf.attaquer(thor);
