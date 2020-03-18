@@ -25,10 +25,10 @@ class Personnage {
   verifierSante() {
     if (this.sante <= 0) {
       this.sante = 0;
-    }
     console.log(`
     ${this.pseudo} a perdu !
     `);
+    }
   }
 
   get informations() {
