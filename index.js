@@ -1,9 +1,9 @@
-// Import stylesheets
-import './style.css';
+// // Import stylesheets
+// import './style.css';
 
-// Write Javascript code!
-const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+// // Write Javascript code!
+// const appDiv = document.getElementById('app');
+// appDiv.innerHTML = `<h1>JS Starter</h1>`;
 
 //  class Personnage
 class Personnage {
@@ -46,8 +46,8 @@ class Magicien extends Personnage {
         this.classe = 'magicien'
         this.sante = 170
         this.attaque = 90
-
     }
+    
     attaquer(ennemi) {
         ennemi.sante -= this.attaque
         console.log(`
