@@ -68,6 +68,8 @@ class Magicien extends Personnage {
       ennemi.pseudo
     } ${this.attaque * 5} dégâts.
   `);
+    this.evoluer();
+    ennemi.verifierSante();
   }
 }
 
@@ -84,7 +86,7 @@ class War extends Personnage {
   attaquer(ennemi) {
     ennemi.sante -= this.attaque;
     console.log(`
-        ${this.pseudo} attaque ${ennemi.pseudo} en lançant un sort ${
+        ${this.pseudo} attaque ${ennemi.pseudo} avec son épéé ${
       this.attaque
     } dégâts
         `);
@@ -95,12 +97,21 @@ class War extends Personnage {
   coupSpecial(ennemi) {
     ennemi.sante -= this.attaque * 5;
     console.log(`
-  ${this.pseudo} attaque avec son coup spécial puissance des arcanes ${
+  ${this.pseudo} attaque avec son coup spécial haches de guerre ${
       ennemi.pseudo
     } ${this.attaque * 5} dégâts.
   `);
+    this.evoluer();
+    ennemi.verifierSante();
   }
 }
 
-const M = new Magicien("Gandalf");
-M.informations;
+var gandalf = new Magicien('Gandalf');
+var thor    = new Guerrier('Thor');
+console.log(thor.informations);
+console.log(gandalf.informations);
+gandalf.attaquer(thor);
+console.log(thor.informations);
+thor.attaquer(gandalf);
+console.log(gandalf.informations);
+gandalf.coupSpecial(thor);
