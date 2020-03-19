@@ -31,7 +31,7 @@ class Personnage {
         ${this.pseudo} ${this.classe} a ${
       this.sante
     } points de vie et est au niveau ${this.niveau}.
-        `);    
+        `)
   }
 }
 
