@@ -30,8 +30,8 @@ class Personnage {
     console.log(`
         ${this.pseudo} ${this.classe} a ${
       this.sante
-    } points de vie et est au niveau ${this.niveau}
-        `);
+    } points de vie et est au niveau ${this.niveau}.
+        `);    
   }
 }
 
@@ -53,7 +53,7 @@ class Magicien extends Personnage {
     } dégâts
         `);
     this.evoluer();
-    //ennemi.verifierSante();
+    ennemi.verifierSante();
   }
 
   coupSpecial(ennemi) {
@@ -64,7 +64,7 @@ class Magicien extends Personnage {
     } ${this.attaque * 5} dégâts.
   `);
     this.evoluer();
-   // ennemi.verifierSante();
+    ennemi.verifierSante();
   }
 }
 
@@ -86,7 +86,7 @@ class War extends Personnage {
     } dégâts
         `);
     this.evoluer();
-    //ennemi.verifierSante();
+    ennemi.verifierSante();
   }
 
   coupSpecial(ennemi) {
@@ -97,7 +97,7 @@ class War extends Personnage {
     } ${this.attaque * 5} dégâts.
   `);
     this.evoluer();
-    //ennemi.verifierSante();
+    ennemi.verifierSante();
   }
 }
 
