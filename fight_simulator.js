@@ -111,4 +111,4 @@ thor.attaquer(gandalf);
 console.log(gandalf.informations);
 gandalf.coupSpecial(thor);
 
-};
+}
