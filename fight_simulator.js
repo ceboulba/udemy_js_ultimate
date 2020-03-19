@@ -1,5 +1,5 @@
 
-export default const Fight= () => {
+export default function Fight() {
 
 class Personnage {
   constructor(pseudo, classe, sante, attaque, niveau = 1) {
@@ -110,4 +110,5 @@ console.log(thor.informations);
 thor.attaquer(gandalf);
 console.log(gandalf.informations);
 gandalf.coupSpecial(thor);
-}
+
+};

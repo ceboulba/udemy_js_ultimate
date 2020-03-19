@@ -1,2 +1,3 @@
 console.log('helloWorld !')
-import './fight_simulator.js'
+import Fight from './fight_simulator.js'
+fight()
