@@ -1,4 +1,4 @@
-import {Fight} from './fight_simulator.js'
+import Fight from './fight_simulator.js'
 console.log('helloWorld !')
 
-fight()
+Fight()
